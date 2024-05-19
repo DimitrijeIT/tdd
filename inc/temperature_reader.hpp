@@ -2,16 +2,17 @@
 
 #include "filter.hpp"
 
+#define MOCKABLE virtual
 class TemeperatureReader
 {
 public:
         TemeperatureReader(Filter& filter);
-		int ReadRawTemperature();
-		int ReadFilterdTemperature();
+		MOCKABLE int ReadRawTemperature();
+		MOCKABLE int ReadFilterdTemperature();
 		
-private: //todo: PRIVATE:
-	int CelsiusToKelvin(int temp_in_celsius);
-	int KelvinToCelsius(int temp_in_kelvin);
+ //todo: PRIVATE:
+	MOCKABLE int CelsiusToKelvin(int temp_in_celsius);
+	MOCKABLE int KelvinToCelsius(int temp_in_kelvin);
 	
 	Filter& filter_;
 };
