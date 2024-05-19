@@ -12,5 +12,4 @@ TEST_F(UtTemperatureMonitorApp, WhenThen)
 
 	auto return_value = temperature_monitor_app_.run();
 	EXPECT_EQ(return_value, kDefaultValueForTemperature);
-
 }

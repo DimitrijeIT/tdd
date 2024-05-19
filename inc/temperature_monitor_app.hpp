@@ -2,11 +2,12 @@
 #include "codings.hpp"
 #include "temperature_reader.hpp"
 
+#define MOCKABLE virtual 
 class TemperatureMonitorApp
 {
 public:
 	TemperatureMonitorApp(Codings& codings, TemeperatureReader& temperature_reader);
-	int run();
+	MOCKABLE int run();
 	
 private:
 	Codings& codings_;
