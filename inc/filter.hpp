@@ -3,12 +3,13 @@
 #define MOCKABLE virtual
 class Filter
 {
-    public:
-        Filter() = default;
+public:
+    Filter() = default;
 
-        MOCKABLE bool PutTemperature(int temp);
-        MOCKABLE int GetMedian();
-        MOCKABLE int GetFilterdData(int);
-    private:
-        int last_temp; // todo: Add array
+    MOCKABLE bool PutTemperature(int temp);
+    MOCKABLE int GetMedian();
+    MOCKABLE int GetFilterdData(int);
+
+private:
+    int last_temp; // todo: Add array
 };

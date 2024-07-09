@@ -10,5 +10,4 @@ TEST_F(UtTemeperatureReader, WhenThen)
 
 	auto return_value = temperature_reader_.ReadFilterdTemperature();
 	EXPECT_EQ(return_value, kDefaultValueForTemperature);
-
 }

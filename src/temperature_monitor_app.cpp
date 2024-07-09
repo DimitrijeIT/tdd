@@ -1,8 +1,7 @@
 #include "temperature_monitor_app.hpp"
 
-TemperatureMonitorApp::TemperatureMonitorApp(Codings &codings, TemeperatureReader &temperature_reader):
-    codings_(codings),
-    temperature_reader_(temperature_reader)
+TemperatureMonitorApp::TemperatureMonitorApp(Codings &codings, TemeperatureReader &temperature_reader) : codings_(codings),
+                                                                                                         temperature_reader_(temperature_reader)
 {
 }
 

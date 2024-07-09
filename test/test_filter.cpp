@@ -3,7 +3,7 @@
 
 TEST(ExpectedTest, TEST_NAME)
 {
-    Filter f; 
+    Filter f;
     auto a = f.GetMedian();
     EXPECT_EQ(0, a);
 }

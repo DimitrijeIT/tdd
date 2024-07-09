@@ -1,6 +1,6 @@
 #include "temperature_reader.hpp"
 
-TemeperatureReader::TemeperatureReader(Filter &filter): filter_(filter)
+TemeperatureReader::TemeperatureReader(Filter &filter) : filter_(filter)
 {
 }
 
